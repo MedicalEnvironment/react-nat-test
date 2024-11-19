@@ -6,7 +6,7 @@ import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
   const handlePress = () => {
-    Linking.openURL('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCNUnPVF6iSPPXw77SVuInlMKniYyjO21Byw&s');
+    Linking.openURL('https://as1.ftcdn.net/v2/jpg/04/83/03/58/1000_F_483035899_9mafUWsv7OOIeXEXlFtJeP7kR6yju9g4.jpg');
   };
 
   return (
