@@ -14,29 +14,34 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#1D1D1D', dark: '#0D0D0D' }}
       headerImage={
         <Image
-          source={{
-            uri: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/03/Kaneki-Cropped.jpg'
-          }}
+          source={require('@/assets/images/relax_image.jpg')}
           style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title" style={styles.mainTitle}>
-          Do you wanna be 7 or 1000?
+          Find Your Inner Peace
         </ThemedText>
       </ThemedView>
 
       <ThemedView style={styles.messageContainer}>
         <ThemedText style={styles.messageText}>
-          Do you wanna continue living like this? Or you wanna make change?
+          Welcome to your personal sanctuary of tranquility. In today's fast-paced world, 
+          finding moments of peace can feel impossible. That's why we created this space - just for you.
         </ThemedText>
         <ThemedText style={styles.messageText}>
-          Our society has become a place where we're expected to follow the crowd, to be another face in the masses. 
-          We've become comfortable being average, being that 7 out of 10.
+          Our interactive relaxation tools are designed to help you disconnect from daily stress 
+          and find your center. Whether you have 5 minutes or an hour, these simple yet effective 
+          exercises can help calm your mind and restore your energy.
         </ThemedText>
         <ThemedText style={styles.messageText}>
-          But what if you could be more? What if you could push beyond those limits, break free from societal norms, 
-          and become that 1000? The choice is yours.
+          Try our mesmerizing particle game in the Relax tab - where each touch creates a 
+          beautiful display of floating orbs. Watch as they dance across your screen, 
+          their gentle movements helping to wash away the tension of your day.
+        </ThemedText>
+        <ThemedText style={[styles.messageText, styles.highlightText]}>
+          Remember: Taking time for yourself isn't selfish - it's essential. 
+          Your peace of mind matters, and we're here to help you find it.
         </ThemedText>
       </ThemedView>
 
@@ -48,7 +53,7 @@ export default function HomeScreen() {
           ]}
           onPress={handlePress}
         >
-          <ThemedText style={styles.buttonText}>Be Different</ThemedText>
+          <ThemedText style={styles.buttonText}>Begin Your Journey</ThemedText>
         </Pressable>
       </ThemedView>
     </ParallaxScrollView>
@@ -56,14 +61,13 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  // ... existing styles ...
   titleContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 20,
   },
   mainTitle: {
-    fontSize: 24,
+    fontSize: 28,
     textAlign: 'center',
     fontWeight: 'bold',
   },
@@ -75,6 +79,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     textAlign: 'justify',
+  },
+  highlightText: {
+    fontWeight: '500',
+    fontSize: 17,
+    fontStyle: 'italic',
   },
   headerImage: {
     height: 300,
